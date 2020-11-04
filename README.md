@@ -6,9 +6,9 @@ This kata set was designed to help students preparing for the Core Block Review 
 * Reduce
 * hofs incl. map, filter, forEach
 
-Tests have been drafted though they are by no means exhaustive. Feel free to add and tweak as you see fit.
+Tests have been drafted though they are by no means exhaustive. Feel free to add and tweak tests as you see fit.
 
-To state the rather obvious, functions have been named for my amusement rather and to conform to more sensible naming conventions. Sorrynotsorry. I recommend using better naming conventions in your code as you work through them.
+To state the rather obvious, functions have been named for my amusement rather than to conform to more sensible naming conventions. Sorrynotsorry. I recommend using better naming conventions in your code as you work through them to get into good habits.
 
 Irony points are available for humour (in good taste please) and are redeemable for political capital and jars of Corbo's allotment jam in fields of wheat in the Maidenhead constituency.
 
@@ -19,12 +19,12 @@ Find all MPs who have worked in the treasury. #treasuryMPs
 ### Examples:
 
 ```js
-treasuryMPs(madeUpData); // returns ['Mitch McConnel', 'Paul Ryan', 'Bernie Sanders']
+treasuryMPs(madeUpData); // returns ['Mitch McConnell', 'Paul Ryan', 'Bernie Sanders']
 ```
 
 ## 2. #olderTories
 
-Find all of the Conservative party MPs who have held office before 2014. 
+Find all of the Conservative party MPs who have held office since before 2015. 
 
 ### Examples:
 
@@ -34,22 +34,22 @@ olderTories(madeUpData); // returns ['Jonti Jones', 'Freddie Finklebash']
 
 ## 3. #momentwho
 
-Find all of the Labour party MPs who were elected to office in the June 2018 General Election. 
+Find all of the Labour party MPs and return an array of their names with the string 'Comrade' replacing all but their last name. 
 
 ### Examples:
 
 ```js
-momentwho(madeUpData); // returns ['Corbius the Younger', 'Abbotius the Innumerate']
+momentwho(madeUpData); // returns ['Comrade Corbyn', 'Comrade Abbot']
 ```
 
 ## 4. #lazyBones
 
-Find all MPs who have never held office.
+Find all MPs who have never held office and return a new array of their names apprended with the string 'so lazy!'
 
 ### Examples:
 
 ```js
-lazyBones(madeUpData); // returns ['Lazy Larry', 'Snoozy Sally']
+lazyBones(madeUpData); // returns ['Sean Harris so lazy!']
 ```
 
 ## 5. #scousersAndWools

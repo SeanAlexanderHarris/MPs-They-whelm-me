@@ -14,36 +14,37 @@ describe("lazyBones", () => {
 
   it("returns an empty array when passed an empty array", () => {
     const input = [];
-    const actual = lazyBones;
+    const actual = lazyBones(input);
     const expected = []
     expect(actual).to.eql(expected);
   });
 
   it("returns an array of one name when passed an array of one valid MP", () => {
-    const input = [mpData[]];
-    const actual = lazyBones;
-    const expected = []
+    const input = [mpData[4]];
+    const actual = lazyBones(input);
+    const expected = ["Justin Tomlinson so lazy!"]
     expect(actual).to.eql(expected);
   });
 
   it("returns an empty array when passed an array of one invalid name", () => {
-    const input = [];
-    const actual = lazyBones;
+    const input = [mpData[0]];
+    const actual = lazyBones(input);
     const expected = []
     expect(actual).to.eql(expected);
   });
 
   it("returns an array of one name when passed an array of one valid name and one invalid name", () => {
-    const input = [];
-    const actual = lazyBones;
-    const expected = []
+    const input = [mpData[10]];
+    const actual = lazyBones(input);
+    const expected = ["John Baron so lazy!"]
     expect(actual).to.eql(expected);
   });
 
   it("returns an array of the correct names when passed the entire data set", () => {
-    const input = [];
-    const actual = lazyBones;
+    const input = mpData;
+    const actual = lazyBones(input);
     const expected = []
+    console.log(actual);
     expect(actual).to.eql(expected);
   });
 
